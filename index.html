@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Website</title>
-  <link rel="stylesheet" href="site.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <!-- Loading Spinner -->
@@ -15,9 +15,11 @@
   <!-- Your Content -->
   <div class="content">
     <h1>Welcome to My Website</h1>
-    <p>This is a beautiful opening animation!</p>
+    <p id="note">This is your note! Edit it below.</p>
+    <textarea id="edit-note" placeholder="Type your note here..."></textarea>
+    <button id="save-btn">Save Note</button>
   </div>
 
-  <script src="site.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
