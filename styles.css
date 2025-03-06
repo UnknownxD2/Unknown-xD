@@ -4,7 +4,13 @@ body {
   font-family: 'Georgia', serif; /* Elegant font */
   opacity: 0; /* Start with the body invisible */
   animation: fadeIn 2s ease-in-out forwards; /* Apply the fade-in animation */
-  background: rgba(255, 255, 255, 0.95); /* Soft white background with slight fade */
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); /* Gradient background */
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite, fadeIn 2s ease-in-out forwards;
+  min-height: 100vh; /* Ensure the background covers the full page */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @keyframes fadeIn {
@@ -13,6 +19,18 @@ body {
   }
   to {
     opacity: 1; /* End fully visible */
+  }
+}
+
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
   }
 }
 
@@ -57,11 +75,10 @@ body.loaded #loader {
 .note-container {
   padding: 40px;
   max-width: 800px;
-  margin: 0 auto;
   background: rgba(255, 255, 255, 0.9); /* Slightly transparent white background */
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  margin-top: 50px;
+  text-align: center;
 }
 
 #note {
