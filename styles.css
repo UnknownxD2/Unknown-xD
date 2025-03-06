@@ -75,7 +75,7 @@ body.loaded #loader {
 .note-container {
   padding: 40px;
   max-width: 800px;
-  background: rgba(255, 255, 255, 0.9); /* Slightly transparent white background */
+  background: rgba(255, 255, 255, 1.5); /* Slightly transparent white background */
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   text-align: center;
