@@ -1,12 +1,10 @@
 /* General Styles */
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: 'Georgia', serif; /* Elegant font */
   opacity: 0; /* Start with the body invisible */
   animation: fadeIn 2s ease-in-out forwards; /* Apply the fade-in animation */
-  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-  background-size: 400% 400%;
-  animation: gradientBG 15s ease infinite, fadeIn 2s ease-in-out forwards;
+  background: rgba(255, 255, 255, 0.95); /* Soft white background with slight fade */
 }
 
 @keyframes fadeIn {
@@ -15,18 +13,6 @@ body {
   }
   to {
     opacity: 1; /* End fully visible */
-  }
-}
-
-@keyframes gradientBG {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
   }
 }
 
@@ -69,17 +55,18 @@ body.loaded #loader {
 
 /* Note Container Styles */
 .note-container {
-  padding: 20px;
+  padding: 40px;
   max-width: 800px;
   margin: 0 auto;
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.9); /* Slightly transparent white background */
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   margin-top: 50px;
 }
 
 #note {
-  font-size: 1.2rem;
-  line-height: 1.6;
+  font-size: 1rem; /* Smaller font size */
+  line-height: 1.8; /* Increased line height for better readability */
   color: #333;
+  text-align: justify; /* Justify text for a clean look */
 }
